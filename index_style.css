@@ -52,6 +52,7 @@ body, html {
   a {
     text-decoration: none;
   }
+  
   .pf-sticky-section {
     width: 50%;
     height: 100px;
@@ -69,6 +70,11 @@ body, html {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  @media (max-width: 400px) {
+    .pf-sticky-section {
+      display: none; /* Hide the sticky section on mobile */
+    }
   }
   
   .pf-sticky-section ul {
