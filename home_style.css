@@ -1,0 +1,100 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  
+  img,
+  svg {
+    display: block;
+    width: 100%;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .pf-sticky-section {
+    width: 50%;
+    height: 100px;
+    position: fixed;
+    align-items: center;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0  );
+    border-radius: 20px;
+    z-index: 9;
+    padding: 0 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  @media (max-width: 767px) {
+    .pf-sticky-section {
+      display: none; /* Hide the sticky section on mobile */
+    }
+  }
+  
+  .pf-sticky-section ul {
+    list-style: none;
+    border-radius: 12px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    padding-right: 40px;
+  }
+  
+  .pf-sticky-section li {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: box-shadow 0.5s;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px;
+    
+    user-select: none; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+  }
+  
+  .pf-sticky-section li:hover {
+    background: #d2d2d2;
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+      inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+  }
+  
+  .pf-sticky-section img {
+    width: 50px;
+    height: 50px;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  
+  
+  @keyframes floatAnimation {
+    0% {
+      transform: translate3d(20px, 0, 0);
+    }
+    50% {
+      transform: translate3d(0, 20px, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 100px);
+    }
+  }
+
+  

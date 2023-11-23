@@ -1,15 +1,17 @@
 const helloText = document.getElementById('helloText');
-const texts = ['Hello!', 'नमस्ते!', 'नमस्कार!'];
 let index = 0;
 
 setInterval(() => {
   helloText.textContent = texts[index];
   index = (index + 1) % texts.length;
-}, 2000);
+}, 1500);
 
 
 window.addEventListener("load", () => {
     const elem = document.getElementById("main");
-    elem.classList.remove("loading");
+    elem.classList.remove("Hello!");
   });
-  
+
+  setTimeout(function() {
+    window.location.href = "home.html"; // Replace with your desired URL
+}, 2500);
