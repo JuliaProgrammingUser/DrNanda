@@ -1,16 +1,14 @@
-function select(el) {
-	document.querySelector(".navsearch").classList.remove("active")
-	document.querySelector(".active").classList.remove("active")
-	
-	el.classList.add("active")
-	
-	document.body.style.setProperty('--activeclr', el.dataset.clr);
-}
-function selectsearch() {
-	console.log("select")
-	const el = document.querySelector(".navsearch")
-	el.classList.toggle("active")
-	if (el.classList.contains("active")) {
-		document.querySelector(".searchbox").focus()
-	}
-}
+
+
+const doc = document;
+const menuOpen = doc.querySelector(".menu");
+const menuClose = doc.querySelector(".close");
+const overlay = doc.querySelector(".overlay");
+
+menuOpen.addEventListener("click", () => {
+  overlay.classList.add("overlay--active");
+});
+
+menuClose.addEventListener("click", () => {
+  overlay.classList.remove("overlay--active");
+});
