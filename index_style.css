@@ -92,7 +92,8 @@ body, html {
     text-align: center;
     transition: box-shadow 0.5s;
     border-radius: 12px;
-
+    padding: 10px;
+    margin: 10px;
   }
   
   .pf-sticky-section li:hover {
