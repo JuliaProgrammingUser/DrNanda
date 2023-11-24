@@ -1,10 +1,4 @@
-const helloText = document.getElementById('helloText');
-let index = 0;
 
-setInterval(() => {
-  helloText.textContent = texts[index];
-  index = (index + 1) % texts.length;
-}, 1500);
 
 
 window.addEventListener("load", () => {
@@ -13,5 +7,8 @@ window.addEventListener("load", () => {
   });
 
   setTimeout(function() {
-    window.location.href = "home.html"; // Replace with your desired URL
-}, 2500);
+    if (window.innerWidth <= 767) {
+      window.location.href = "home.html"; // Redirect to home.html for mobile view
+    }
+    window.location.href = "home.html";
+  }, 2500);
