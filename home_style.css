@@ -577,7 +577,7 @@ body{
 }
 
 .container-ninja {
-  width: 100%;
+  width: 99.5%;
 }
 
 /* Bar */
@@ -610,4 +610,17 @@ body{
 .logoho img {
   width: 50px; /* Adjust the width as desired */
   height: auto; /* Maintain aspect ratio */
+}
+
+@media screen and (max-width: 768px) {
+  .outerdiv {
+    display: block;
+  }
+}
+
+/* Define styles for desktop view */
+@media screen and (min-width: 769px) {
+  .b {
+    display: block;
+  }
 }
