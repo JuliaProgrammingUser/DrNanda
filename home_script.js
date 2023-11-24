@@ -19,7 +19,6 @@ window.addEventListener('resize', function() {
   const divA = document.querySelector('.outerdiv');
   const divB = document.querySelector('.b');
   
-  // Check if mobile view
   if (window.innerWidth <= 768) {
     divA.style.display = 'none';
     divB.style.display = 'block';
