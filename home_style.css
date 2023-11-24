@@ -551,7 +551,7 @@ body{
 
 /* Style for the two-parts div */
 .two-parts {
-  background-color: rgb(68, 124, 255); /* Background color for the two-parts div */
+  background-color: #5faaff; /* Background color for the two-parts div */
   border-radius: 20px 20px 20px 20px; /* Rounded corners for the bottom of the two-parts div */
   overflow: hidden; /* Hide overflow content */
 }
@@ -567,12 +567,12 @@ body{
 
 /* Different background colors for top and bottom */
 .top-part {
-  background-color: rgb(46, 146, 240); /* Background color for the top part */
+  background-color: #5faaff; /* Background color for the top part */
   color: white; /* Text color for the top part */
 }
 
 .bottom-part {
-  background-color: rgb(12, 212, 235); /* Background color for the bottom part */
+  background-color: rgb(116, 178, 255); /* Background color for the bottom part */
   color: white; /* Text color for the bottom part */
 }
 
@@ -585,7 +585,7 @@ body{
   width: 100%;
   height: 50px;
   border-radius: 10px;  
-  background-color: #1381ff;
+  background-color: #5faaff;
   position: relative;
   overflow: hidden;
 }
@@ -597,7 +597,7 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 18px;
-  background-color: #1381ff;
+  background-color: #5faaff;
   color: white;
 }
 
