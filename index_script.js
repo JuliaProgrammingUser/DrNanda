@@ -1,14 +1,10 @@
-
-
-
-window.addEventListener("load", () => {
-    const elem = document.getElementById("main");
-    elem.classList.remove("Hello!");
-  });
-
+if (window.innerWidth <= 767)
+ {
+  window.location.href = "home.html";
+}
+ else 
+ {
   setTimeout(function() {
-    if (window.innerWidth <= 767) {
-      window.location.href = "home.html"; // Redirect to home.html for mobile view
-    }
-    window.location.href = "home.html";
+    window.location.href = "home.html"; 
   }, 2500);
+}
