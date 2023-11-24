@@ -31,7 +31,7 @@ body, html {
     height: 80px;
     margin: 0 auto;
     color: white;
-    font-weight: lighter;
+    font-weight: lighter; 
     text-align: center;
     
     &:after {
@@ -217,63 +217,4 @@ body, html {
       display: none; /* Hide the sticky section on mobile */
     }
   }
-  
-  .pf-sticky-section ul {
-    list-style: none;
-    border-radius: 12px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    
-    padding-right: 40px;
-  }
-  
-  .pf-sticky-section li {
-    display: inline-block;
-    width: 70px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transition: box-shadow 0.5s;
-    border-radius: 12px;
-    padding: 10px;
-    margin: 10px;
-    
-    user-select: none; 
-    -webkit-user-select: none; 
-    -moz-user-select: none; 
-    -ms-user-select: none; 
-  }
-  
-  .pf-sticky-section li:hover {
-    background: #d2d2d2;
-    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
-      inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
-    cursor: pointer;
-  }
-  
-  .pf-sticky-section img {
-    width: 50px;
-    height: 50px;
-    height: auto;
-    display: block;
-    margin: auto;
-  }
-  
-  
-  @keyframes floatAnimation {
-    0% {
-      transform: translate3d(20px, 0, 0);
-    }
-    50% {
-      transform: translate3d(0, 20px, 0);
-    }
-    100% {
-      transform: translate3d(0, 0, 100px);
-    }
-  }
-
   
