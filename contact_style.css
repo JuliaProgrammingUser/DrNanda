@@ -565,7 +565,7 @@ input:focus, textarea:focus, keygen:focus, select:focus {
   content: attr(data-text);
   font-size: 1rem;
   font-weight: bold;
-  background-color: #ffffff;
+  background-color: #ffffff9c;
   position: absolute;
   top: -55%;
   right: 50%;
@@ -589,7 +589,7 @@ input:focus, textarea:focus, keygen:focus, select:focus {
   content: "";
   height: 100%;
   width: 100%;
-  background-color: #e4e8ed;
+  background-color: #e4e8ed8f;
   position: absolute;
   top: 50%;
   right: 50%;
