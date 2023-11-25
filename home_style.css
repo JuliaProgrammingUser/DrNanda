@@ -327,3 +327,103 @@ ul {
 	}
 }
 
+
+.pf-sticky-section .social {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 1.7%;
+}
+
+.social a {
+  height: 40px;
+  width: 40px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  display: grid;
+  place-items: center;
+  position: relative;
+  border-radius: 10px;  
+}
+
+.social .googlemap {
+  background-color: #ffffff;
+  height: 40px;
+  width: 40px;
+}
+
+.social .facebook {
+  background-color: #4267b2;
+  height: 40px;
+  width: 40px;
+}
+
+.social .gmail {
+  background-color: #ffffff;
+  height: 40px;
+  width: 40px;
+}
+
+.social .whatsapp {
+  background-color: #30e162;
+  height: 40px;
+  width: 40px;
+}
+
+.social .phone{
+  background-color: #ffffff;
+  height: 40px;
+  width: 40px;
+}
+.social a svg {
+  fill: #fff;
+  transition: transform 200ms ease-in-out;
+  z-index: 2;
+}
+
+.social a::before {
+  content: attr(data-text);
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #ffffff;
+  position: absolute;
+  top: -55%;
+  right: 50%;
+  transform: translateX(50%) rotate3d(300, 0, 0, -90deg);
+  padding: 3px 5px 6px 5px;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 90%,
+    55% 90%,
+    50% 100%,
+    45% 90%,
+    0% 90%
+  );
+  transition: transform 200ms ease-in-out;
+  transform-origin: bottom;
+}
+
+
+.social a::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #e4e8ed;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  transition: transform 200ms ease-in-out;
+  transform-origin: bottom;
+  clip-path: circle(0% at 50% 100%);
+  border-radius: 10px;
+  transition: clip-path 250ms ease-in-out;
+}
+
+.social a:hover::after {
+  clip-path: circle(100%);
+}
+
