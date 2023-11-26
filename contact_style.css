@@ -174,53 +174,7 @@ body, html {
     
   }
   
-  .pf-sticky-section li {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transition: box-shadow 0.5s;
-    border-radius: 12px;
-    padding: 10px;
-    margin: 10px;
-    
-    user-select: none; 
-    -webkit-user-select: none; 
-    -moz-user-select: none; 
-    -ms-user-select: none; 
-  }
-  
-  .pf-sticky-section li:hover {
-    background: #d2d2d2;
-    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
-      inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
-    cursor: pointer;
-  }
-  
-  .pf-sticky-section img {
-    width: 50%;
-    height: 10%;
-    height: auto;
-    display: block;
-    margin: auto;
-    margin: 10px;
-  }
-  
-  
-  @keyframes floatAnimation {
-    0% {
-      transform: translate3d(20px, 0, 0);
-    }
-    50% {
-      transform: translate3d(0, 20px, 0);
-    }
-    100% {
-      transform: translate3d(0, 0, 100px);
-    }
-  }
+ 
 
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
