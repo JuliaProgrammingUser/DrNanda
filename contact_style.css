@@ -507,7 +507,6 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 .pf-sticky-section .social a svg {
   fill: #fff;
   transition: transform 200ms ease-in-out;
-  z-index: 2;
 }
 
 .pf-sticky-section .social a::before {
