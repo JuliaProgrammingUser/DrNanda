@@ -314,6 +314,7 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 /* Contact Form Styling */
 .container {
 	padding: 0 50px 70px;
+  width: 40%;
 }
 .textcenter {
 	text-align: center;
@@ -488,8 +489,6 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 
 .pf-sticky-section .social .gmail {
   background-color: #ffffff;
-  height: 40px;
-  width: 40px;
 }
 
 .pf-sticky-section .social .whatsapp {
