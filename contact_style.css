@@ -477,14 +477,10 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 
 .pf-sticky-section .social .googlemap {
   background-color: #ffffff;
-  height: 40px;
-  width: 40px;
 }
 
 .pf-sticky-section .social .facebook {
   background-color: #4267b2;
-  height: 40px;
-  width: 40px;
 }
 
 .pf-sticky-section .social .gmail {
@@ -493,20 +489,16 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 
 .pf-sticky-section .social .whatsapp {
   background-color: #30e162;
-  height: 40px;
-  width: 40px;
 }
 
 
 .pf-sticky-section .social .phone{
-  background-color: #ffffff;
-  height: 40px;
-  width: 40px;
-}
+  background-color: #ffffff;}
 
 .pf-sticky-section .social a svg {
   fill: #fff;
   transition: transform 200ms ease-in-out;
+  z-index: 2;
 }
 
 .pf-sticky-section .social a::before {
