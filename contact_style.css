@@ -189,10 +189,6 @@ body, html {
 	padding: 0;
 }
 
-body {
-	line-height: 1.5;
-	font-family: 'Poppins', sans-serif;
-}
 
 .footer {
 	background-color: #151515;
@@ -467,55 +463,55 @@ input:focus, textarea:focus, keygen:focus, select:focus {
   margin-top: 1.7%;
 }
 
-.social a {
+.pf-sticky-section .social a {
   height: 40px;
   width: 40px;
   border-radius: 15px;
-  background-color: #ffffff;
+  background-color: #ffffff82;
   display: grid;
   place-items: center;
   position: relative;
   border-radius: 10px;  
 }
 
-.social .googlemap {
+.pf-sticky-section .social .googlemap {
   background-color: #ffffff;
   height: 40px;
   width: 40px;
 }
 
-.social .facebook {
+.pf-sticky-section .social .facebook {
   background-color: #4267b2;
   height: 40px;
   width: 40px;
 }
 
-.social .gmail {
+.pf-sticky-section .social .gmail {
   background-color: #ffffff;
   height: 40px;
   width: 40px;
 }
 
-.social .whatsapp {
+.pf-sticky-section .social .whatsapp {
   background-color: #30e162;
   height: 40px;
   width: 40px;
 }
 
 
-.social .phone{
+.pf-sticky-section .social .phone{
   background-color: #ffffff;
   height: 40px;
   width: 40px;
 }
 
-.social a svg {
+.pf-sticky-section .social a svg {
   fill: #fff;
   transition: transform 200ms ease-in-out;
   z-index: 2;
 }
 
-.social a::before {
+.pf-sticky-section .social a::before {
   content: attr(data-text);
   font-size: 1rem;
   font-weight: bold;
@@ -539,7 +535,7 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 }
 
 
-.social a::after {
+.pf-sticky-section .social a::after {
   content: "";
   height: 100%;
   width: 100%;
@@ -555,7 +551,7 @@ input:focus, textarea:focus, keygen:focus, select:focus {
   transition: clip-path 250ms ease-in-out;
 }
 
-.social a:hover::after {
+.pf-sticky-section .social a:hover::after {
   clip-path: circle(100%);
 }
 
