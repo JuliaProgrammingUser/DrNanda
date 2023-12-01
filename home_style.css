@@ -151,8 +151,12 @@ body {
 }
 
 .footer {
-	background-color: #151515;
-	padding: 80px 0;
+  background-color: #151515;
+  padding: 80px 0;
+  position: flex;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .container {
