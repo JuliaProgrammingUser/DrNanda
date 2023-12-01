@@ -14,11 +14,3 @@ menuClose.addEventListener("click", () => {
 });
 
 
-
-window.addEventListener('resize', function() {
-  const divA = document.querySelector('.outerdiv');
-  
-  if (window.innerWidth <= 768) {
-    divA.style.display = 'none';
-  }
-});
