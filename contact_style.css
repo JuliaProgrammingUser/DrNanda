@@ -545,3 +545,9 @@ input:focus, textarea:focus, keygen:focus, select:focus {
   clip-path: circle(100%);
 }
 
+
+@media (max-width: 1000px) {
+  .pf-sticky-section {
+    display: none; /* Hide the sticky section on mobile */
+  }
+}

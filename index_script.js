@@ -1,4 +1,4 @@
-if (window.innerWidth <= 767)
+if (window.innerWidth <= 1000)
  {
   window.location.href = "home.html";
 }
