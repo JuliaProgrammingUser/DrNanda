@@ -9,26 +9,28 @@
    
 </head>
 <body>
-    <header>
-        <a class="logo" href="index.html">Dr. Nanda R. Kumar</a>
-        <nav>
-            <ul class="nav__links">
-                <li><a href="#">Our Services</a></li>
-                <li><a href="#">Book Appointment</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
-        </nav>
+  <header>
+    <a class="logo" href="home.html">Dr. Nanda R. Kumar</a>
+    <nav>
+        <ul class="nav__links">
+            <li><a href="ourservices.html">Our Services</a></li>
+            <li><a href="book.html">Book Appointment</a></li>
+            
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+    <a class="cta" href="contact.html">Contact</a>
+    <p class="menu cta">Menu</p>
+</header>
+<div id="mobile__menu" class="overlay">
+    <a class="close">&times;</a>
+    <div class="overlay__content">
+        <a href="ourservices.html">Our Services</a>
+        <a href="book.html">Book Appointment</a>
+        <a href="about.html">About Us</a>
         <a class="cta" href="contact.html">Contact</a>
-        <p class="menu cta">Menu</p>
-    </header>
-    <div id="mobile__menu" class="overlay">
-        <a class="close">&times;</a>
-        <div class="overlay__content">
-            <a href="#">Our Services</a>
-            <a href="#">Book Appointment</a>
-            <a href="#">About Us</a>
-        </div>
     </div>
+</div>
   
 
 	<div class="container">
@@ -51,6 +53,8 @@
                         </div>
                        
 				</div>
+
+        
 				<div class="col2 column2 last">
 					<div class="sec2innercont">
 						<div class="sec2addr">
@@ -89,12 +93,74 @@
 		
 		</div>
 	</div>
+<hr>
 
 
+    <div class="division">
+        OR
+        </div>
+<hr>
+        <div class="flex items-center min-h-screen bg-gray-100 dark:bg-gray-900">
+            <div class="container mx-auto">
+              <div class="max-w-xl mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
+                <div class="text-center">
+                  <h1 class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
+                    Contact Us
+                  </h1>
+                  <p class="text-gray-400 dark:text-gray-400">
+                    Fill up the form below to send us a message.
+                  </p>
+                </div>
+                <div class="m-7">
+                  <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                    <input type="hidden" name="access_key" value="8c8ec059-8334-4e2b-b008-9cb68edad367" />
+                    <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                    <input type="checkbox" name="botcheck" id="" style="display: none;" />
+          
+                    <div class="flex mb-6 space-x-4">
+                      <div class="w-full md:w-1/2">
+                        <label for="fname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">First Name</label>
+                        <input type="text" name="name" id="first_name" placeholder="First Name" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                      </div>
+                      <div class="w-full md:w-1/2">
+                        <label for="lname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Last Name</label>
+                        <input type="text" name="last_name" id="lname" placeholder="Last Name" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                      </div>
+                    </div>
+          
+                    <div class="flex mb-6 space-x-4">
+                      <div class="w-full md:w-1/2">
+                        <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email Address</label>
+                        <input type="email" name="email" id="email" placeholder="xyz@email.com" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                      </div>
+          
+                      <div class="w-full md:w-1/2">
+                        <label for="phone" class="block text-sm mb-2 text-gray-600 dark:text-gray-400">Phone Number</label>
+                        <input type="text" name="phone" id="phone" placeholder="+91 9967954124" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                      </div>
+                    </div>
+                    <div class="mb-6">
+                      <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your Message</label>
+          
+                      <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
+                    </div>
+                    <div class="mb-6">
+                      <button type="submit" class="w-full px-3 py-4 text-white bg-blue-500 rounded-md focus:bg-blue-400 focus:outline-none">
+                        Send Message
+                      </button>
+                      <div class="policy">
+                        Clicking this button("Send Message") means you agree to our <div class="privacy-col"><a href="policy.html">Privacy Policy</a></div>
+                        </div>
+                    </div>
+                    <p class="text-base text-center text-gray-400" id="result"></p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
-
-
+<hr>
 
 
 
@@ -144,35 +210,35 @@
 <script type="text/javascript" src="home_script.js"></script>
 <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
 <footer class="footer">
-    <div class="container row">
-        <div class="footer-col">
-            <h4>Kumar's Polyclinic</h4>
-            <ul>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">our services</a></li>
-                <li><a href="#">privacy policy</a></li> 
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h4>get help</h4>
-            <ul>
-                <li><a href="#">Book Appointment</a></li>
-                <li><a href="#">FAQ</a></li>
-            </ul>
-        </div>
-        
-        <div class="footer-col">
-            <h4>Connect</h4>
-            <div class="social-links">
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-google"></i></a>
-                    <a href="#"><i class="fas fa-address-card"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
+  <div class="container row">
+      <div class="footer-col">
+          <h4>Kumar's Polyclinic</h4>
+          <ul>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="ourservices.html">our services</a></li>
+              <li><a href="policy.html">privacy policy</a></li> 
+          </ul>
+      </div>
+      <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+              <li><a href="book.html">Book Appointment</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+          </ul>
+      </div>
+      
+      <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="social-links">
+              <div class="social-links">
+                  <a href="https://www.facebook.com/kumarpolyclinic"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://maps.app.goo.gl/DfcB3raS2nec3pNt6"><i class="fab fa-google"></i></a>
+                  <a href="contact.html"><i class="fas fa-address-card"></i></a>
+                  <a href="https://wa.me/919967954124?text=Hi, I am reaching out regarding Kumar's Polyclinic."><i class="fab fa-whatsapp"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
 </footer>
 </html>
     

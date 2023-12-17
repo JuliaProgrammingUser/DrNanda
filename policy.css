@@ -129,42 +129,8 @@ body, html {
     }
   }
   
-  img,
-  svg {
-    display: block;
-    width: 100%;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  .pf-sticky-section {
-    width: 40%;
-    height: 8%;
-    position: fixed;
-    align-items: center;
-    bottom: 20px;
-    left: 50%;
-    transform: translate(-50%, 0  );
-    border-radius: 20px;
-    z-index: 9;
-    padding: 0 10px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-  }
-  @media (max-width: 1000px) {
-    .pf-sticky-section {
-      display: none; /* Hide the sticky section on mobile */
-    }
-  }
-  
-  
- 
+
+
 
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
@@ -179,6 +145,10 @@ body, html {
 	padding: 0;
 }
 
+body {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
 
 .footer {
   background-color: #151515;
@@ -272,182 +242,6 @@ ul {
 }
 
 
-* {
-	margin:0px;
-	padding:0px;
-}
-*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing: border-box; }
-
-.clearfix:before, .clearfix:after { display: table; content: ''; }
-.clearfix:after { clear: both; }
-
-
-body {
-	background: #ffffff;
-	color: #333;
-	font-weight: normal;
-	font-size: 1em;
-	font-family: 'Roboto', Arial, sans-serif;
-}
-
-input:focus, textarea:focus, keygen:focus, select:focus {
-	outline: none;
-}
-::-moz-placeholder {
-	color: #666;
-	font-weight: 300;
-	opacity: 1;
-}
-
-::-webkit-input-placeholder {
-	color: #666;
-	font-weight: 300;
-}
-
-
-/* Contact Form Styling */
-.container {
-	padding: 0 50px 70px;
-  width: 40%;
-}
-.textcenter {
-	text-align: center;
-  font-size: 50px;
-  
-}
-.section1 {
-	text-align: center;
-	display: table;
-	width: 100%;
-}
-.section1 .shtext {
-	display: block;
-	margin-top: 20px;
-}
-.section1 .seperator {
-	border-bottom:1px solid #a2a2a2;
-	width: 35px;
-	display: inline-block;
-	margin: 20px;
-  border: #151515;
-  border-radius: 10px;
-}
-
-.section1 h1 {
-	font-size: 40px;
-	color: #A44DD8;
-	font-weight: normal;
-}
-
-.section2 {
-    width: 1200px;
-    margin: 25px auto;
-}
-.section2 .col2 {
-	width: 48.71%;
-  
-}
-.section2 .col2.first {
-	float: left;
-  
-}
-.section2 .col2.last {
-	float: right;
-}
-.section2 .col2.column2 {
-	padding: 0 30px;
-}
-.section2 span.collig {
-	color: #a2a2a2;
-	margin-right: 10px;
-	display: inline-block;
-}
-.section2 .sec2addr {
-	display: block;
-	line-height: 26px;  
-}
-.section2 .sec2addr p:first-child {
-	margin-bottom: 10px;
-  
-  margin: 10px;
-}
-.section2 .sec2contactform input[type="text"], 
-.section2 .sec2contactform input[type="email"],
-.section2 .sec2contactform textarea {
-    padding: 18px;
-    border: 10px;
-    background: #ebebeb;
-    margin: 10px 0;
-    border-radius: 10px;
-}
-
-.section2 .sec2contactform textarea {
-	width: 100%;
-	display: block;
-	color: #666;
-  resize:none;
-}
-.section2 .sec2contactform input[type="submit"] {
-	padding: 15px 40px;
-    color: #fff;
-    border: 0;
-    background: rgb(82, 189, 239) ;
-    font-size: 16px;
-    text-transform: uppercase;
-    margin: 7px 0;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
-/* @media querries */
-
-@media only screen and (max-width: 1266px) {
-	.section2 {
-		width: 100%;
-	}
-}
-@media only screen and (max-width: 960px) {
-	.container {
-		padding: 0 30px 70px;
-	}
-	.section2 .col2 {
-		width: 100%;
-		display: block;
-	}
-	.section2 .col2.first {
-		margin-bottom: 10px;
-	}
-	.section2 .col2.column2 {
-		padding: 0;
-	}
-	body .sec2map {
-		height: 250px !important;
-	}
-}
-@media only screen and (max-width: 768px) {
-	.section2 .sec2addr {
-		font-size: 14px;
-	}
-	.section2 .sec2contactform h3 {
-		font-size: 16px;
-	}
-	.section2 .sec2contactform input[type="text"], .section2 .sec2contactform input[type="email"], .section2 .sec2contactform textarea {
-		padding: 10px;
-		margin:3px 0;
-	}
-	.section2 .sec2contactform input[type="submit"] {
-		padding: 10px 30px;
-		font-size: 14px;
-	}
-}
-@media only screen and (max-width: 420px) {
-	.section1 h1 {
-		font-size: 28px;
-	}	
-}
-#gmap_canvas img{max-width:none!important;background:none!important}
-
-
 .pf-sticky-section ul {
   list-style: none;
   border-radius: 12px;
@@ -465,20 +259,9 @@ input:focus, textarea:focus, keygen:focus, select:focus {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  height: center;
-  margin: 1.5%;
+  margin-top: 1.5%;
 }
-.policy{
-  color: grey;
-  display: center;
-  position: center;
-  text-align: center;
-  margin: 10px;
-  padding: 10px;
-}
-.privacy-col{
-  color: rgb(136, 200, 255);
-}
+
 .pf-sticky-section .social a {
   height: 40px;
   width: 40px;
@@ -560,85 +343,154 @@ input:focus, textarea:focus, keygen:focus, select:focus {
   clip-path: circle(100%);
 }
 
-.division {
-  text-align: center;
-  font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
 
-@keyframes move_wave {
-  0% {
-      transform: translateX(0) translateZ(0) scaleY(1)
-  }
-  50% {
-      transform: translateX(-25%) translateZ(0) scaleY(0.55)
-  }
-  100% {
-      transform: translateX(-50%) translateZ(0) scaleY(1)
-  }
-}
-.waveWrapper {
-  
-  overflow: hidden;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  margin: auto;
-}
-.waveWrapperInner {
-  
+img,
+svg {
+  display: block;
   width: 100%;
-  overflow: hidden;
-  height: 100%;
-  bottom: -1px;
-  background-image: linear-gradient(to top, #84ceff 20%, #46b5ff 80%);
-}
-.bgTop {
-  z-index: 2;
-  opacity: 0.5;
-}
-.bgMiddle {
-  z-index: 1;
-  opacity: 0.75;
-}
-.bgBottom {
-  z-index: -1;
-}
-.wave {
-  position: absolute;
-  left: 0;
-  width: 200%;
-  height: 100%;
-  background-repeat: repeat no-repeat;
-  background-position: 0 bottom;
-  transform-origin: center bottom;
-}
-.waveTop {
-  background-size: 50% 100px;
-}
-.waveAnimation .waveTop {
-animation: move-wave 3s;
- -webkit-animation: move-wave 3s;
- -webkit-animation-delay: 1s;
- animation-delay: 1s;
-}
-.waveMiddle {
-  background-size: 50% 120px;
-}
-.waveAnimation .waveMiddle {
-  animation: move_wave 10s linear infinite;
-}
-.waveBottom {
-  background-size: 50% 100px;
-}
-.waveAnimation .waveBottom {
-  animation: move_wave 15s linear infinite;
 }
 
+a {
+  text-decoration: none;
+}
+
+.pf-sticky-section {
+  width: 40%;
+  height: 8%;
+  position: fixed;
+  align-items: center;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0  );
+  border-radius: 20px;
+  z-index: 9;
+  padding: 0 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
 @media (max-width: 1000px) {
-  .waveWrapper {
+  .pf-sticky-section {
     display: none; /* Hide the sticky section on mobile */
   }
 }
+
+/* Updated CSS with more descriptive class names */
+.ninja{
+    background-color: hsla(0, 0%, 100%, 0.547);
+    border-radius: 10px;
+    margin: 10px;
+    
+}
+.privacy-policy-container {
+    border-color: lightblue;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+  }
+  
+  .privacy-policy-heading {
+    color: black;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .policy-intro {
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  .policy-section-heading {
+    color: black;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .policy-section-text {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  @keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.waveWrapperInner {
+    
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    background-image: linear-gradient(to top, #84ceff 20%, #46b5ff 80%);
+}
+.bgTop {
+    z-index: 2;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: 1;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: -1;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+
+@media (max-width: 1000px) {
+    .waveWrapper {
+      display: none; /* Hide the sticky section on mobile */
+    }
+  }
