@@ -569,3 +569,23 @@ a {
       display: none; /* Hide the sticky section on mobile */
     }
   }
+
+  .home-ing{
+    display: flex; 
+    padding-right: 35rem;
+    padding-left: 26rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    pointer-events: none;
+    max-height: 150px;
+    margin-top: 50px;
+    margin-bottom: -50px;
+    }
+    
+    @media (max-width: 1000px){
+      .home-ing{
+        display: none; 
+        
+      }
+    }
+    
