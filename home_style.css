@@ -1330,3 +1330,10 @@ a {
       }
     }
   }
+
+@media screen and (max-width: 1000px) {
+  .clinic-gallery {
+    display: none; /* Hide the sticky section on mobile */
+  }
+  
+}

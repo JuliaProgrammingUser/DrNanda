@@ -1,78 +1,5 @@
-@keyframes move_wave {
-    0% {
-        transform: translateX(0) translateZ(0) scaleY(1)
-    }
-    50% {
-        transform: translateX(-25%) translateZ(0) scaleY(0.55)
-    }
-    100% {
-        transform: translateX(-50%) translateZ(0) scaleY(1)
-    }
-  }
-  .waveWrapper {
-    
-    overflow: hidden;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
-  }
-  .waveWrapperInner {
-    
-    width: 100%;
-    overflow: hidden;
-    height: 100%;
-    bottom: -1px;
-    background-image: linear-gradient(to top, #84ceff 20%, #46b5ff 80%);
-  }
-  .bgTop {
-    z-index: 2;
-    opacity: 0.5;
-  }
-  .bgMiddle {
-    z-index: 1;
-    opacity: 0.75;
-  }
-  .bgBottom {
-    z-index: -1;
-  }
-  .wave {
-    position: absolute;
-    left: 0;
-    width: 200%;
-    height: 100%;
-    background-repeat: repeat no-repeat;
-    background-position: 0 bottom;
-    transform-origin: center bottom;
-  }
-  .waveTop {
-    background-size: 50% 100px;
-  }
-  .waveAnimation .waveTop {
-  animation: move-wave 3s;
-   -webkit-animation: move-wave 3s;
-   -webkit-animation-delay: 1s;
-   animation-delay: 1s;
-  }
-  .waveMiddle {
-    background-size: 50% 120px;
-  }
-  .waveAnimation .waveMiddle {
-    animation: move_wave 10s linear infinite;
-  }
-  .waveBottom {
-    background-size: 50% 100px;
-  }
-  .waveAnimation .waveBottom {
-    animation: move_wave 15s linear infinite;
-  }
+
   
-  @media (max-width: 1000px) {
-    .waveWrapper {
-      display: none; /* Hide the sticky section on mobile */
-    }
-  }
   body, html {
     margin: 0;
     padding: 0;
@@ -207,114 +134,6 @@
   
   
   
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-  
-  *,
-  *::before,
-  *::after {
-  box-sizing: border-box;
-  }
-  
-  * {
-  margin: 0;
-  padding: 0;
-  }
-  
-  body {
-  line-height: 1.5;
-  font-family: 'Poppins', sans-serif;
-  }
-  
-  .footer {
-  background-color: #151515;
-  padding: 80px 0;
-  position: flex;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  }
-  
-  .container {
-  max-width: 1170px;
-  margin: auto;
-  }
-  
-  .row {
-  display: flex;
-  flex-wrap: wrap;
-  }
-  
-  ul {
-  list-style: none;
-  }
-  
-  .footer-col {
-  width: 25%;
-  padding: 0 15px;
-  }
-  
-  .footer-col h4 {
-  font-size: 18px;
-  color: #FFF;
-  text-transform: capitalize;
-  margin-bottom: 35px;
-  font-weight: 500;
-  position: relative;
-  }
-  
-  .footer-col h4::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  background-color: #E91E63;
-  width: 50px;
-  height: 2px;
-  }
-  
-  .footer-col ul li:not(:last-child) {
-  margin-bottom: 10px;
-  }
-  
-  .footer-col ul li a {
-  color: #DDD;
-  display: block;
-  font-size: 1rem;
-  font-weight: 300;
-  text-transform: capitalize;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  }
-  
-  .footer-col ul li a:hover {
-  color: #FFF;
-  padding-left: 7px;
-  }
-  
-  .footer-col .social-links a {
-  color: #FFF;
-  background-color: rgba(255, 255, 255, 0.2);
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  text-align: center;
-  margin: 0 10px 10px 0;
-  line-height: 40px;
-  transition: all 0.5s ease;
-  }
-  
-  .footer-col .social-links a:hover {
-  color: #151515;
-  background-color: #FFF;
-  }
-  
-  @media(max-width: 767px) {
-  .footer-col {
-    width: 50%;
-    margin-bottom: 30px;
-  }
-  }
   
   
   .pf-sticky-section ul {
@@ -1126,41 +945,126 @@
     font-display: center;
   }
   
-  .ninjaman {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  :root {
+    --primary: #227093;
+    --secondary: #ff5252;
+    --background: #eee;
+    --highlight: #ffda79;
+    /* Theme color */
+    --theme: var(--primary);
+  }
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  .accordion {
+   display: grid;
+    place-content: center;
+    grid-template-columns: repeat(auto-fit, min(100%, 30rem));
+    place-items: start;
+    gap: 1rem;
+    margin: 0;
+    padding: 1rem;
+    height: 25%;
+    width: 50%;
     display: center;
-    margin: auto;
-    overflow: auto;
-    scrollbar-width: thin;
-    scrollbar-color: #2c7bfe #ffffff;
+    color: var(--primary);
+    background: var(--background);
+    margin: 30px ;
   }
   
-  .ninjaman::-webkit-scrollbar {
-    width: 8px;
+  /* Core styles/functionality */
+  .tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  .tab__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.35s;
+  }
+  .tab input:checked ~ .tab__content {
+    max-height: 10rem;
   }
   
-  .ninjaman::-webkit-scrollbar-thumb {
-    background-color: #2c7bfe;
-    border-radius: 4px;
+  /* Visual styles */
+  .accordion {
+    color: var(--theme);
+    border: 2px solid;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  .tab__label,
+  .tab__close {
+    display: flex;
+    color: white;
+    background: var(--theme);
+    cursor: pointer;
+  }
+  .tab__label {
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .tab__label::after {
+    content: "\276F";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transform: rotate(90deg);
+    transition: all 0.35s;
+  }
+  .tab input:checked + .tab__label::after {
+    transform: rotate(270deg);
+  }
+  .tab__content p {
+    margin: 0;
+    padding: 1rem;
+  }
+  .tab__close {
+    justify-content: flex-end;
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+  .accordion--radio {
+    --theme: var(--secondary);
   }
   
-  .ninjaman::-webkit-scrollbar-thumb:hover {
-    background-color: #1f194c;
+  /* Arrow animation */
+  .tab input:not(:checked) + .tab__label:hover::after {
+    animation: bounce .5s infinite;
   }
-  
-  .ninjaman::-webkit-scrollbar-track {
-    background-color: #ffffff;
-  }
-  
-  @keyframes scrollAnimation {
-    0% {
-      background-position: 0 0;
+  @keyframes bounce {
+    25% {
+      transform: rotate(90deg) translate(.25rem);
     }
-    100% {
-      background-position: 0 100%;
+    75% {
+      transform: rotate(90deg) translate(-.25rem);
     }
-  }
-  
-  .ninjaman:hover::-webkit-scrollbar-thumb {
-    animation: scrollAnimation 0.5s infinite alternate;
   }
   
