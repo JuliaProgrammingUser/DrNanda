@@ -1051,7 +1051,7 @@
     text-align: center;
   }
   .card {
-    width: 120%;
+    width: 130%;
     height: 500px;
     padding: 2em 1.5em;
     background: linear-gradient(#ffffff 50%, #2c7bfe 50%);
@@ -1100,22 +1100,22 @@
   .card:hover p {
     color: #f0f0f0;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 0px) {
     section {
       padding: 0 2em;
     }
     .column {
       flex: 0 50%;
-      max-width: 50%;
+      max-width: 10%;
     }
   }
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 0px) {
     section {
       padding: 1em 3em;
     }
     .column {
       flex: 0 0 33.33%;
-      max-width: 33.33%;
+      max-width: 100%;
     }
   }
   
@@ -1128,9 +1128,7 @@
   
   .ninjaman {
     display: center;
-   
     margin: auto;
-    margin-right: 70px;
     overflow: auto;
     scrollbar-width: thin;
     scrollbar-color: #2c7bfe #ffffff;
