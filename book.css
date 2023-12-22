@@ -965,106 +965,54 @@
 
 
 
-
-
-
-
-
-
-  :root {
-    --primary: #227093;
-    --secondary: #ff5252;
-    --background: #eee;
-    --highlight: #ffda79;
-    /* Theme color */
-    --theme: var(--primary);
-  }
-  *, *::before, *::after {
-    box-sizing: border-box;
-  }
-  .accordion {
-   display: grid;
-    place-content: center;
-    grid-template-columns: repeat(auto-fit, min(100%, 30rem));
-    place-items: start;
-    gap: 1rem;
-    margin: 0;
-    padding: 1rem;
-    height: 25%;
-    width: 50%;
-    display: center;
-    color: var(--primary);
-    background: var(--background);
-    margin: 30px ;
-  }
   
-  /* Core styles/functionality */
-  .tab input {
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
-  }
-  .tab__content {
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.35s;
-  }
-  .tab input:checked ~ .tab__content {
-    max-height: 10rem;
-  }
-  
-  /* Visual styles */
-  .accordion {
-    color: var(--theme);
-    border: 2px solid;
-    border-radius: 0.5rem;
-    overflow: hidden;
-  }
-  .tab__label,
-  .tab__close {
+  .team-section {
     display: flex;
-    color: white;
-    background: var(--theme);
-    cursor: pointer;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  .tab__label {
-    justify-content: space-between;
-    padding: 1rem;
-  }
-  .tab__label::after {
-    content: "\276F";
-    width: 1em;
-    height: 1em;
+  
+  .team-member {
     text-align: center;
-    transform: rotate(90deg);
-    transition: all 0.35s;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.21);
+    transition: transform 0.3s ease-in-out;
   }
-  .tab input:checked + .tab__label::after {
-    transform: rotate(270deg);
+  
+  .team-member:hover {
+    transform: translateY(-10px);
   }
-  .tab__content p {
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .team-member h3 {
+    font-weight: 700;
     margin: 0;
-    padding: 1rem;
-  }
-  .tab__close {
-    justify-content: flex-end;
-    padding: 0.5rem 1rem;
-    font-size: 0.75rem;
-  }
-  .accordion--radio {
-    --theme: var(--secondary);
   }
   
-  /* Arrow animation */
-  .tab input:not(:checked) + .tab__label:hover::after {
-    animation: bounce .5s infinite;
-  }
-  @keyframes bounce {
-    25% {
-      transform: rotate(90deg) translate(.25rem);
-    }
-    75% {
-      transform: rotate(90deg) translate(-.25rem);
-    }
+  .team-member .role {
+    color: #888;
+    margin-bottom: 10px;
   }
   
+  .fa {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #000;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    text-decoration: none;
+  }
+  
+  .team-member:hover .fa {
+    transform: scale(1.2);
+    color: #007AFF;
+  }
