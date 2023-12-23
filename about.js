@@ -44,3 +44,4 @@ var swiper = new Swiper(".team-slider",{
         },
     },
 });
+
